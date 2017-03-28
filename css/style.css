@@ -1,0 +1,136 @@
+body, html {
+    width: 100%;
+}
+
+#licznik {
+    position: relative;
+    margin: 15% 45%;
+    
+}
+
+
+.counting {
+    height:50px;
+    width: 50px;
+    background-color: white;
+    color: black;
+    text-align: right;
+    font-size: 40px;
+    animation-duration: 1s;
+    position: absolute;
+    animation-name: odliczanie;
+    opacity: 0.0;
+    animation-iteration-count: 1;
+    margin: 
+}
+@keyframes odliczanie {
+    0% {
+       opacity: 1; 
+        
+    }
+    99% {
+        opacity: 1;
+    }
+   
+    100% {
+        
+        opacity: 0.0;
+        }
+      
+}
+
+div#b9 {
+    animation-delay: 1s;
+}
+div#b8 {
+    animation-delay: 2s;
+}
+div#b7 {
+    animation-delay: 3s;
+}
+div#b6 {
+    animation-delay: 4s;
+}
+div#b5 {
+    animation-delay: 5s;
+}
+div#b4 {
+    animation-delay: 6s;
+}
+div#b3 {
+    animation-delay: 7s;
+}
+div#b2 {
+    animation-delay: 8s;
+}
+div#b1 {
+    animation-delay: 9s;
+}
+
+@keyframes odliczanie2 {
+    0% {
+       opacity: 1; 
+        
+    }
+    100% {
+        opacity: 1;
+    }
+      
+}
+#ilovecss {
+    animation-name: odliczanie2;
+    animation-delay: 10s;
+    animation-iteration-count: infinite;
+    width: auto;
+}
+
+.heart {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #ff0000;
+    border-bottom-right-radius: 5px;
+    position: relative;
+    color: transparent;
+    margin: 0 15px;
+    
+    animation-name: pulse;
+    animation-iteration-count:infinite;
+    animation-duration: 1s;
+}
+
+.heart::after, .heart::before {
+    content: '';
+    width: 30px;
+    height: 30px;
+    background: red;
+    
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: -50%;
+    
+}
+
+.heart::after {
+    top: -50%;
+    left: 0;
+}
+
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1) rotate(45deg);
+    }
+    50% {
+        transform: scale(1.4) rotate(45deg);
+    }
+    100% {
+        transform: scale(1) rotate(45deg);
+
+    }
+    
+}
+
+
